@@ -25,8 +25,7 @@ pipeline {
         // SLACK_CHANNEL = '' 
         // SLACK_TEAM_DOMAIN = ''
         // SLACK_TOKEN = credentials('')
-        //PROJECT_NAME = readMavenPom().getArtifactId()
-        PROJECT_VERSION = readMavenPom().getVersion()
+        PROJECT_VERSION = "0.0.1"
         GIT_USER = 'jenkins-icam@protonmail.com'
         GIT_USER_NAME = 'jenkins-icam'
         //NEW_VERSION = chooseVersion("${PROJECT_VERSION}","${env.GIT_BRANCH}")
@@ -76,7 +75,7 @@ pipeline {
                         withCredentials([usernamePassword(credentialsId: 'Jenkins-ICAM', usernameVariable: 'username', passwordVariable: 'password')]) {
                             //sh "ssh-keyscan -t rsa ${GIT_HOST} >> ~/.ssh/known_hosts"
                             //sh "ssh-agent bash -c 'ssh-add ${GIT_CREDS}; 
-                             sh "git push https://${username}:${password}@${GIT_REPO} HEAD:develop'"
+                             sh "git push https://${username}:${password}@${GIT_REPO} HEAD:develop"
                         }
             }
         }
@@ -101,7 +100,7 @@ pipeline {
                         withCredentials([usernamePassword(credentialsId: 'Jenkins-ICAM', usernameVariable: 'username', passwordVariable: 'password')]) {
                             //sh "ssh-keyscan -t rsa ${GIT_HOST} >> ~/.ssh/known_hosts"
                             //sh "ssh-agent bash -c 'ssh-add ${GIT_CREDS};
-                            sh "git push https://${username}:${password}@${GIT_REPO} HEAD:master'"
+                            sh "git push https://${username}:${password}@${GIT_REPO} HEAD:master"
 
                         }
                     }catch(err){
