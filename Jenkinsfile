@@ -64,7 +64,7 @@ pipeline {
 		
         stage('Merge to Develop') {
             when {
-                branch "feature*"
+                branch "feature/*"
             }
              steps {
                         sh "git config --global user.email '${GIT_USER}'"
@@ -115,7 +115,6 @@ pipeline {
                 branch "develop"
             }
             steps {
-                container('az-kube'){
                         sh "docker tag ${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION} ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest"
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION}"
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest"
@@ -123,7 +122,6 @@ pipeline {
                                     sh "az login --service-principal --tenant ${TENANT_ID} --username ${CLIENT_ID} --password ${CLIENT_ID}"
                                     sh "kubectl set image deployment ${DEPLOYMENT_NAME} ${DEPLOYMENT_NAME}=${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION} --record -n ${NAMESPACE_DEV}"
                                 }
-                }
             }
         }
         stage('Deliver to Hub - Deploy to PROD') {
@@ -131,7 +129,6 @@ pipeline {
                 branch "master"
             }
             steps {
-                container('az-kube'){
                         sh "docker tag ${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION} ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest"
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION}"
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest"
@@ -146,17 +143,14 @@ pipeline {
 
 
 
-                }
             }
         }
     }
 
     post {
         always {
-            container('az-kube'){
                 sh "docker rmi ${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION} || true "
                 sh "docker rmi ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest || true "
-            }
             // notifySlack()
         }
         cleanup {
