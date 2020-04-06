@@ -17,8 +17,8 @@ pipeline {
     }
 
     environment {
-        DEPLOYMENT_NAME = "name-dep" 
-        GIT_REPO = "github.com/ABC-COVID19/XXXXXX.git"
+        DEPLOYMENT_NAME = "frontend" 
+        GIT_REPO = "github.com/ABC-COVID19/frontend.git"
         NAMESPACE_DEV = "icam-dev" 
         NAMESPACE_PROD = "icam-prod" 
         DOCKER_HUB = "docker.icam.org.pt" //Need refactor to dns name
