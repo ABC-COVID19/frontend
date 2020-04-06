@@ -69,6 +69,7 @@ pipeline {
              steps {
                         sh "git config --global user.email '${GIT_USER}'"
                         sh "git config --global user.name '${GIT_USER_NAME}'"
+                        sh "git config http.sslVerify false" //WorkAround
                         sh "git checkout -f origin/develop" 
                         sh "git merge --ff ${env.GIT_COMMIT}"
 
@@ -93,6 +94,7 @@ pipeline {
 
                         sh "git config --global user.email '${GIT_USER}'"
                         sh "git config --global user.name '${GIT_USER_NAME}'"
+                        sh "git config http.sslVerify false" //WorkAround
                         sh "git checkout -f origin/master" 
                         sh "git merge --ff ${env.GIT_COMMIT}"
 
