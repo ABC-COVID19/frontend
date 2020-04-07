@@ -25,7 +25,7 @@ pipeline {
         // SLACK_CHANNEL = '' 
         // SLACK_TEAM_DOMAIN = ''
         // SLACK_TOKEN = credentials('')
-        PROJECT_VERSION = ""
+        PROJECT_VERSION = readFile(file: 'version.txt')
         GIT_USER = 'jenkins-icam@protonmail.com'
         GIT_USER_NAME = 'jenkins-icam'
         //NEW_VERSION = chooseVersion("${PROJECT_VERSION}","${env.GIT_BRANCH}")
@@ -37,15 +37,12 @@ pipeline {
 
         stage('Bump Version') {
             steps {
-                script {
-                    def version = readFile(file: 'version.txt')
-                    def new_version = bumpVersion($version,"patch")
-
-                    writeFile(file: 'version.txt', text: $new_version)
-                    PROJECT_VERSION=$new_version
-                    
+                // script {
+                //     def version = readFile(file: 'version.txt')
+                //     def new_version = bumpVersion($version,"patch")
+                //     writeFile(file: 'version.txt', text: $new_version)
+                // }
                     sh "echo The project new version is: ${PROJECT_VERSION}"
-                }
             }
         }
 
