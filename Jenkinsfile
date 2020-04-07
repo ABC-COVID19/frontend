@@ -120,8 +120,8 @@ pipeline {
                         sh "docker tag ${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION} ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest"
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION}"
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest"
-                        withCredentials([string(credentialsId: 'Azure_tenant_id', variable: 'TENANT_ID'),string(credentialsId: 'Azure_client_id', variable: 'CLIENT_ID'),string(credentialsId: 'Azure_client_secret', variable: 'CLIENT_SECRET')]) { 
-                                    sh "az login --service-principal --tenant ${TENANT_ID} --username ${CLIENT_ID} --password ${CLIENT_ID}"
+                        withCredentials([azureServicePrincipal('Azure_login')]) { 
+                                    sh "az aks get-credentials --name icam --resource-group icam --overwrite-existing"
                                     sh "kubectl set image deployment ${DEPLOYMENT_NAME} ${DEPLOYMENT_NAME}=${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION} --record -n ${NAMESPACE_DEV}"
                                 }
             }
@@ -135,11 +135,8 @@ pipeline {
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION}"
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest"
 
-                        withCredentials([
-                            string(credentialsId: 'Azure_tenant_id', variable: 'TENANT_ID'),
-                            string(credentialsId: 'Azure_client_id', variable: 'CLIENT_ID'),
-                            string(credentialsId: 'Azure_client_secret', variable: 'CLIENT_SECRET')]) { 
-                                    sh "az login --service-principal --tenant ${TENANT_ID} --username ${CLIENT_ID} --password ${CLIENT_ID}"
+                        withCredentials([azureServicePrincipal('Azure_login')]) { 
+                                    sh "az aks get-credentials --name icam --resource-group icam --overwrite-existing"
                                     sh "kubectl set image deployment ${DEPLOYMENT_NAME} ${DEPLOYMENT_NAME}=${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION} --record -n ${NAMESPACE_PROD}"
                                 }
 
