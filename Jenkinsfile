@@ -74,8 +74,6 @@ pipeline {
                         sh "git merge --ff ${env.GIT_COMMIT}"
 
                         withCredentials([usernamePassword(credentialsId: 'Jenkins-ICAM2', usernameVariable: 'username', passwordVariable: 'password')]) {
-                            //sh "ssh-keyscan -t rsa ${GIT_HOST} >> ~/.ssh/known_hosts"
-                            //sh "ssh-agent bash -c 'ssh-add ${GIT_CREDS}; 
                              sh "git push https://${username}:${password}@${GIT_REPO} HEAD:develop"
                         }
             }
@@ -100,8 +98,6 @@ pipeline {
 
 
                         withCredentials([usernamePassword(credentialsId: 'Jenkins-ICAM2', usernameVariable: 'username', passwordVariable: 'password')]) {
-                            //sh "ssh-keyscan -t rsa ${GIT_HOST} >> ~/.ssh/known_hosts"
-                            //sh "ssh-agent bash -c 'ssh-add ${GIT_CREDS};
                             sh "git push https://${username}:${password}@${GIT_REPO} HEAD:master"
 
                         }
@@ -121,6 +117,7 @@ pipeline {
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION}"
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest"
                         withCredentials([azureServicePrincipal('Azure_login')]) { 
+                                    sh "az login ${Azure_login}"
                                     sh "az aks get-credentials --name icam --resource-group icam --overwrite-existing"
                                     sh "kubectl set image deployment ${DEPLOYMENT_NAME} ${DEPLOYMENT_NAME}=${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION} --record -n ${NAMESPACE_DEV}"
                                 }
@@ -136,6 +133,7 @@ pipeline {
                         sh "docker push ${DOCKER_HUB}/${DEPLOYMENT_NAME}:latest"
 
                         withCredentials([azureServicePrincipal('Azure_login')]) { 
+                                    sh "az login ${Azure_login}"
                                     sh "az aks get-credentials --name icam --resource-group icam --overwrite-existing"
                                     sh "kubectl set image deployment ${DEPLOYMENT_NAME} ${DEPLOYMENT_NAME}=${DOCKER_HUB}/${DEPLOYMENT_NAME}:${PROJECT_VERSION} --record -n ${NAMESPACE_PROD}"
                                 }
