@@ -25,7 +25,7 @@ pipeline {
         // SLACK_CHANNEL = '' 
         // SLACK_TEAM_DOMAIN = ''
         // SLACK_TOKEN = credentials('')
-        PROJECT_VERSION = "0.0.1"
+        PROJECT_VERSION = ""
         GIT_USER = 'jenkins-icam@protonmail.com'
         GIT_USER_NAME = 'jenkins-icam'
         //NEW_VERSION = chooseVersion("${PROJECT_VERSION}","${env.GIT_BRANCH}")
@@ -35,17 +35,19 @@ pipeline {
 
     stages {
 
-        // stage('Recursive build Check') {
-        //     steps {
-        //         script {
-        //             if (checkCommit("updated pom version to")){
-        //                 timeout(time: 60, unit: 'SECONDS') {
-        //                     input 'Do you want to Update Version anyway?'
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
+        stage('Bump Version') {
+            steps {
+                script {
+                    def version = readFile(file: 'version.txt')
+                    def new_version = bumpVersion($version,"patch")
+
+                    writeFile(file: 'version.txt', text: $new_version)
+                    PROJECT_VERSION=$new_version
+                    
+                    sh "echo The project new version is: ${PROJECT_VERSION}"
+                }
+            }
+        }
 
         stage('Build and Test') {
             steps {
