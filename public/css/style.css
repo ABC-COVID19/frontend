@@ -1,0 +1,248 @@
+#sidebar{
+    width:200px;
+    background: url('/assets/sidebar_bg.png');
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:bottom center;
+    height:100vh;
+    box-shadow: 0px 3px 6px hsla(0, 0%, 0%, 0.144);
+    position:relative;
+}
+
+
+#sidebar-wrapper{
+    width:200px;
+    background: url('/assets/sidebar_bg.png');
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:bottom center;
+    height:100vh;
+    box-shadow: 0px 3px 6px hsla(0, 0%, 0%, 0.144);
+  position:fixed;
+  z-index:800;
+}
+
+ 
+
+.sidebar__menu ul{
+    list-style-type:none;
+    padding:0px;
+}
+.list-group-item{
+    background:transparent;
+    border-radius:5px;
+    width:100%;
+ 
+    margin-bottom:15px;
+  
+    padding:6px;
+   
+    font-size:13px;
+    color:#151344;
+    transition:all 0.3 ease-in-out;
+	border:0px!important;
+}
+.list-group-item:hover,
+.list-group-item.active{
+    background:#F3DCA7;
+    border-radius:5px;
+    width:100%;
+ 
+    margin-bottom:15px;
+ 
+    padding:6px;
+ 
+    font-size:13px;
+    color:#151344;
+    text-decoration: none;
+}
+
+.sidebar__user-area__link{
+    border-radius:5px;
+    width:100%;
+    display:flex;
+    margin-bottom:20px;
+    height:45px;
+    padding:6px;
+    padding-left:20px;
+    font-size:20px;
+    color:#151344;font-size:13px;
+}
+.sidebar__user-area{
+    position:absolute;
+    bottom:0px;
+}
+#top-content{
+    background: #1A1948;
+    color:white;
+    padding-top: 32px;
+
+}
+
+#containerTop{
+
+ 
+    background: url('/assets/virus-azul.png');
+    background-repeat:no-repeat;  
+    background-size:20%;
+     background-position: 80% 50%; 
+}
+
+
+#top-content h1{
+    font-size:26px;
+ 
+    
+    margin-bottom:0.5em;
+}
+#top-content h2{
+    font-size:16px;
+  
+}
+#main-content input{   
+    width: 100%;
+    height: 46px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 3px 6px #00000030;
+    padding: 20px;
+   
+}
+
+.btSearchSC{
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 3px 6px #00000030;	
+	 margin-top:-1px;height: 46px;
+	background: #ECBE54 0% 0% no-repeat padding-box!important;
+}
+
+
+
+
+
+#main-content h2{
+    font-size:35px;
+ 
+}
+
+
+#categoryList li
+{
+	background: #ECBE54 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 0.5; margin-left:10px;
+	
+}
+#mainCatList  
+{
+ 
+	
+}
+
+#mainCatList div
+{
+	background: #f4dda8 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1; margin-left:5px;
+	
+}
+
+ 
+#mainCatList div:hover
+{
+	background: #ECBE54;
+ 
+	
+}
+
+#mainCatListseldiv
+{
+	background: #252451 0% 0% no-repeat padding-box !important;
+border-radius: 5px;
+opacity: 1; margin-left:5px;
+	
+}
+#mainCatListseldiv a
+{ 
+color:white!important;	
+}
+#mainCatListseldiv:hover
+{
+	background: #ECBE54;
+ 
+	
+}
+
+.list-cat { margin-bottom:15px;transition:all 0.3 ease-in-out;}
+ 
+
+#categoryList a
+{
+text-align: center;
+font: Regular 20px/24px Helvetica Neue;
+letter-spacing: 0px;
+color: #151344;font-size:12px;
+opacity: 1;font-weight: bold;;
+	
+}
+
+#logpfp{ width: 150px !important;}
+@media (min-width: 768px) {
+#logpfp{ width: 450px !important;}
+}
+
+
+
+#footerSC 
+{
+ max-width:600px;
+	
+}
+
+#pageHeader{
+    background: #1A1948;
+    color:white;
+
+}
+.page-name{
+    font-size:26px;
+ 
+}
+
+.article-name{
+    font-size:30px;
+ 
+}
+
+
+.textBoxmain {
+
+    padding: 20px; margin-top:30px;
+ text-align: left;
+font: Regular 26px/32px Helvetica Neue;
+letter-spacing: 0px;
+color: #151344;
+opacity: 1; 
+	
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 20px;
+opacity: 1;
+}
+
+
+.scmenuHam{
+   
+    left: 100%;
+	top:30px;
+	margin-left:-80px;
+	z-index:100; background:#fff;
+ 
+}
+
+.fontCblue {color:#1A1948;}
+.fontCblue a:visited{color:#1A1948;}
+.fontCblue a:link{color:#1A1948;}
