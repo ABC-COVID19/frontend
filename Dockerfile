@@ -1,6 +1,6 @@
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install nginx -y
-COPY ./public/* /var/www/html/
+FROM php:7.0-apache
+
+RUN apt-get update && apt-get clean
+
 EXPOSE 80
-CMD ["nginx","-g","daemon off;"]
+COPY ./public/ /var/www/html/
