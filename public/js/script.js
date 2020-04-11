@@ -1,4 +1,4 @@
-var url = 'https://test.sknv.net';
+var url = 'icambackoffice:8080';
 
 
 
