@@ -1,5 +1,5 @@
  <?php
-	include($_SERVER['DOCUMENT_ROOT'].'\includes\htmlHeader.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/includes/htmlHeader.php');
 ?>
 
 <body>
@@ -9,7 +9,7 @@
   
 
  <?php
-	include($_SERVER['DOCUMENT_ROOT'].'\includes\sideMenu.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/includes/sideMenu.php');
 ?>
 
     <!-- Page Content -->
@@ -50,13 +50,13 @@
       <div class="container-fluid">
  
 <?php
-	include($_SERVER['DOCUMENT_ROOT'].'\includes\search.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/includes/search.php');
 ?>
 
 
  
 <?php
-	include($_SERVER['DOCUMENT_ROOT'].'\includes\bottomMenu.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/includes/bottomMenu.php');
 ?>
 
 
@@ -79,7 +79,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script >
  <?php
-	include($_SERVER['DOCUMENT_ROOT'].'\includes\\auth.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/includes/auth.php');
 ?>
 	var id_token='<?=$id_token?>';
 	</script>

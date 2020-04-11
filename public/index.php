@@ -71,7 +71,7 @@
  	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script >
  <?php
-	include($_SERVER['DOCUMENT_ROOT'].'/includes//auth.php');
+	include($_SERVER['DOCUMENT_ROOT'].'/includes/auth.php');
 ?>
 	var id_token='<?=$id_token?>';
 	</script>
