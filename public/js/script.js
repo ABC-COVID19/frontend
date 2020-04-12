@@ -9,7 +9,11 @@ const getContent = (token) => {
 
 const getCategory = (token) => {
      config = {
-        headers: { Authorization: `Bearer ${token}` }
+         headers: { Authorization: `Bearer ${token}`,
+         'Access-Control-Allow-Origin': '*',
+         'Content-Type': 'application/json'
+        },
+        mode: 'no-cors'
     };
     axios.get(url + '/services/icamapi/api/category-trees',
         config)

@@ -17,10 +17,15 @@ const getContent = (token) => {
 };
 
 const getCategory = (token,id) => {
-     config = {
-        headers: { Authorization: `Bearer ${token}` }
+
+         config = {
+         headers: { Authorization: `Bearer ${token}`,
+         'Access-Control-Allow-Origin': '*',
+         'Content-Type': 'application/json'
+        },
+        mode: 'no-cors'
     };
-	
+
     axios.get(url + '/services/icamapi/api/category-trees?id.equals='+id,
         config)
         .then(response => {

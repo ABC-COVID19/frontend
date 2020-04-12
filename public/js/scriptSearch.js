@@ -9,10 +9,13 @@ if(urlParams.has('search')) {
 
 
 const getRevisions = (token,str) => {
-    config = {
-       headers: { Authorization: `Bearer ${token}` }
-   };
-   
+     config = {
+         headers: { Authorization: `Bearer ${token}`,
+         'Access-Control-Allow-Origin': '*',
+         'Content-Type': 'application/json'
+        },
+        mode: 'no-cors'
+    };
 
 	ids='0';
     axios.get(url + '/services/icamapi/api/revisions?active.equals=true&title.contains='+str,
