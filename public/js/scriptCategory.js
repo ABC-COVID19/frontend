@@ -1,4 +1,4 @@
-var url = 'http://icambackoffice:8080';
+var url = 'https://api.dev.icam.org.pt/';
 
 var urlParams = new URLSearchParams(window.location.search);
 var ids='0';
