@@ -1,5 +1,12 @@
  <?php
-	include($_SERVER['DOCUMENT_ROOT'].'/includes/htmlHeader.php');
+  include($_SERVER['DOCUMENT_ROOT'].'/includes/htmlHeader.php');
+  
+header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST');
+
+header("Access-Control-Allow-Headers: X-Requested-With");
+
 ?>
 
 <body>
