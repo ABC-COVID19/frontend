@@ -1,5 +1,5 @@
 <?php
-$url='https://test.sknv.net/api/authenticate';
+$url='https://api.dev.icam.org.pt/api/authenticate';
 $data_array =  array(
       "username"=> "user",
       "password"=> "user"
