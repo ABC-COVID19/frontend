@@ -11,10 +11,7 @@ if(urlParams.has('search')) {
 const getRevisions = (token,str) => {
      config = {
          headers: { Authorization: `Bearer ${token}`,
-         'Access-Control-Allow-Origin': '*',
-         'Content-Type': 'application/json'
         },
-        mode: 'no-cors'
     };
 
 	ids='0';

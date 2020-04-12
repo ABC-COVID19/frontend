@@ -12,10 +12,7 @@ if(urlParams.has('id')) {
 const getRevision = (token,id) => {
      config = {
          headers: { Authorization: `Bearer ${token}`,
-         'Access-Control-Allow-Origin': '*',
-         'Content-Type': 'application/json'
         },
-        mode: 'no-cors'
     };
    
 
