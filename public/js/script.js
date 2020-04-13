@@ -1,7 +1,7 @@
 var url = 'https://api.dev.icam.org.pt';
 
 console.log("YEALLOW1")
-console.log("You are fetching at:"+ process.env.API_FETCH_URL)
+console.log("You are fetching at:"+ API_FETCH_URL_DEV)
 console.log(" YEALLOW2")
 
 

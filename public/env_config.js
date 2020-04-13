@@ -1,0 +1,1 @@
+var API_FETCH_URL_DEV="https://api.dev.icam.org.pt/"
