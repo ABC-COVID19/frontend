@@ -1,5 +1,9 @@
 var url = 'https://api.dev.icam.org.pt';
 
+console.log("YEALLOW1")
+console.log("You are fetching at:"+ process.env.API_FETCH_URL)
+console.log(" YEALLOW2")
+
 
 
 const getContent = (token) => {
