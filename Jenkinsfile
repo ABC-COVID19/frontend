@@ -29,7 +29,6 @@ pipeline {
         NEW_VERSION = bumpVersion("${PROJECT_VERSION}","patch")
         GIT_USER = 'jenkins-icam@protonmail.com'
         GIT_USER_NAME = 'jenkins-icam'
-        DEBUG_MODE = '-q' // "-q" (quiet)  "-X" (verbose) 
 
     }
 
