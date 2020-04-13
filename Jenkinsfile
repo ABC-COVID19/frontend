@@ -40,7 +40,7 @@ pipeline {
                 script {
                      writeFile(file: 'version.txt', text: "${NEW_VERSION}")
                 }
-                     sh "The new version will be: ${NEW_VERSION}"
+                     sh "echo The new version will be: ${NEW_VERSION}"
             }
         }
 
