@@ -1,5 +1,6 @@
 <?php
-$url='https://api.dev.icam.org.pt/api/authenticate';
+$API_URLFROM_JS = $_COOKIE['API_URL'];
+$url=$API_URLFROM_JS.'/api/authenticate';
 $data_array =  array(
       "username"=> "user",
       "password"=> "user"

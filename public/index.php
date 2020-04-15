@@ -1,6 +1,12 @@
+<script type="text/javascript" src="./env_config.js"></script>
  <?php
   include($_SERVER['DOCUMENT_ROOT'].'/includes/htmlHeader.php');
 ?>
+
+<script>
+//Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
+document.cookie = 'API_URL='+API_FETCH_URL;
+</script>
 
 <body>
 
@@ -84,8 +90,8 @@
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-  </script>
 
+  </script>
 </body>
 
 </html>
