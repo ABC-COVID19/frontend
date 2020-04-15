@@ -5,16 +5,33 @@
 
 <script>
 //Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
+//###############
 document.cookie = 'API_URL='+API_FETCH_URL;
+</script>
+<script type='text/javascript'>
+(function()
+{
+  if( window.localStorage )
+  {
+    if( !localStorage.getItem('firstLoad') )
+    {
+      localStorage['firstLoad'] = true;
+      window.location.reload();
+    }  
+    else
+    localStorage.removeItem('firstLoad');
+  }
+})();
+//###############
 </script>
 
 <body>
-
+  
   <div class="d-flex" id="wrapper">
-
- <?php
+    
+    <?php
 	include($_SERVER['DOCUMENT_ROOT'].'/includes/sideMenu.php');
-?>
+  ?>
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
