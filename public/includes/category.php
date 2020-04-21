@@ -8,7 +8,7 @@
          <div class="col-12 mb-3">
                           <img src="/assets/ICAM2e.png" class="img-fluid" id="logpfp" >
                            
-											<p class=" mt-2">Informação Científica de apoio aos médicos</p>
+											<p class=" mt-2">Informação Científica de Apoio aos Médicos</p>
             </h2>
          </div>
       </div>
