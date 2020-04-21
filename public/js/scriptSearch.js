@@ -39,6 +39,16 @@ const getRevisions = (token,str) => {
 						ids=ids + ',' + v.id;
 					});
 
+					axios.get(url + '/services/icamapi/api/revisions?active.equals=true&summary.contains='+str,
+						config)
+						.then(response => {
+							var revisions = response.data;
+							revisions.forEach(v => {
+								ids=ids + ',' + v.id;
+							});
+
+
+
 					axios.get(url + '/services/icamapi/api/revisions?active.equals=true&id.in='+ids,
 						config)
 						.then(response => {
@@ -100,6 +110,11 @@ const getRevisions = (token,str) => {
 							}
 						})
 						.catch(error => console.error(error));
+
+				})
+				.catch(error => console.error(error));
+
+
 				})
 				.catch(error => console.error(error));
         })

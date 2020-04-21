@@ -16,12 +16,12 @@
 						<div class="p-2"><a href="http://www.sensocomum.pt" target="_blank"><img src="/assets/logo_tipoSC.png" class="img-fluid"  style="max-width:250px;max-height:77px"  ></a></div>  						
 					</div>
 			 	</div>				
-				
+				<div class="container"><hr></div>
 				<div class="d-flex justify-content-center">
-					<div class="d-flex flex-row mb-5 ml-3  justify-content-center" id="footerSC">
-						<!--<p  class="p-2">Termos e condições</p>
-						<p  class="p-2">Política de Privacidade</p>
-						<p  class="p-2">Ficha Técnica</p>-->
-						<p class="orange-text p-2">copyright 2020 ABC </p>
+					<div class=" mb-5 ml-3" id="footerSC">
+					 
+						<p class="text-center"><a href="/ppdp/" class="p-2 fontCblue">Política de Privacidade</a></p>
+					 
+						<p class="orange-text p-2 text-center">copyright 2020 ABC </p>
 					</div>
 			 	</div>

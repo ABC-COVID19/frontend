@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-<title>ICAM | COVID19</title>
+<title>ICAM | COVID19 | Informação Científica de Apoio aos Médicos</title>
 
     <link href="/mdbpro/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -28,5 +28,7 @@
 
   gtag('config', 'UA-752667-66');
 </script>
+<meta property="og:title" content="Projeto ICAM-COVID19">
+<meta property="og:image" content="https://www.icam.org.pt/assets/projectoICAMcovid.jpg"> 
 
 </head>

@@ -6,7 +6,7 @@
          <div class="col-12 mb-3">
                           <img src="/assets/ICAM2e.png" class="img-fluid" id="logpfp" >
                             <p class="page-name  mt-2">Contactos ICAM</p>
-											<p>Informação Científica de apoio aos médicos</p>
+											<p>Informação Científica de Apoio aos Médicos</p>
             </h2>
          </div>
       </div>
@@ -22,8 +22,14 @@
                 <div class="container">
                  
 				<h2 class="fontCblue font-weight-bold mt-5">Contacto</h2>
-				   <h5 class="font-weight-bold mb-3 fontCblue  text-center ">Deixe a sua pergunta sobre a CoVID-19, nós tentaremos procurar um artigo como resposta!</h5>
+				   <h5 class="font-weight-bold mb-3 fontCblue  text-center ">
+				  Em resposta a pedidos de informa&ccedil;&atilde;o espec&iacute;ficos, a equipa ICAM d&aacute; prioridade &agrave; produ&ccedil;&atilde;o de sinopses de artigos cient&iacute;ficos sobre o(s) t&oacute;pico(s) solicitado(s).
 				   
+				   </h5>
+				   <p>
+				   Relembramos que as sinopses versam os conte&uacute;dos dos artigos que consideramos ser de maior relev&acirc;ncia e atualidade cient&iacute;ficas. A leitura integral dos artigos fica ao crit&eacute;rio dos profissionais de sa&uacute;de, sendo, contudo, recomendado que o fa&ccedil;am para uma atua&ccedil;&atilde;o cl&iacute;nica mais informada.
+				   
+				   </p>
 					
 		<div class="textBoxmain  text-center">
 
