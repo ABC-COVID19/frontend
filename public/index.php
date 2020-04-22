@@ -4,9 +4,11 @@
 ?>
 
 <script>
-//Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
-//###############
-document.cookie = 'API_URL='+ API_FETCH_URL;
+    //todo: fix nisto. neste moment todos os indexes que fazem requests ao API precisam disto e do includes env_config
+    //todo: esses o newsletter tem isto tb
+    //Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
+    //###############
+    document.cookie = 'API_URL='+ API_FETCH_URL;
 </script>
 
 <body>
@@ -82,7 +84,7 @@ document.cookie = 'API_URL='+ API_FETCH_URL;
 ?>
 	var id_token='<?=$id_token?>';
 	</script>
-	<script src="js/script.js"></script>
+	<script src="/js/script.js"></script>
 
 
   <!-- Menu Toggle Script -->
