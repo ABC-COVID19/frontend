@@ -1,6 +1,12 @@
-var url = 'https://test.sknv.net';
 
-
+//Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
+function getCookie(name) {
+	var value = "; " + document.cookie;
+	var parts = value.split("; " + name + "=");
+	if (parts.length === 2) return parts.pop().split(";").shift();
+}
+var url = getCookie("API_URL");
+//#################
 
 
 const getCategories = (token) => {

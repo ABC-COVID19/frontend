@@ -32,7 +32,7 @@ const getRevision = (token,id) => {
                var el = document.querySelector("#title");
                el.textContent=revision.title;
                var el = document.querySelector("#article");
-			   var aa = createLink(' https://www.doi.org/' + revision.article.articleDoi,revision.article.articleTitle,'fontCblue'); 
+			   var aa = createLink(revision.article.articleLink,revision.article.articleTitle,'fontCblue');
 			   el.appendChild(aa);
                var el = document.querySelector("#authors");
                el.textContent=revision.article.citation.replace(revision.article.articleDate,'');
@@ -41,7 +41,7 @@ const getRevision = (token,id) => {
                var el = document.querySelector("#date");
                el.textContent=revision.article.articleDate; 
                var el = document.querySelector("#link");
-               var a = createLink(' https://www.doi.org/' + revision.article.articleDoi,'Acesso ao artigo',''); 
+               var a = createLink(revision.article.articleLink,'Acesso ao artigo','');
                el.appendChild(a);
                var el = document.querySelector("#category");
                el.textContent=getRevCats(revision.ctrees); 

@@ -3,7 +3,7 @@
 function getCookie(name) {
   var value = "; " + document.cookie;
   var parts = value.split("; " + name + "=");
-  if (parts.length == 2) return parts.pop().split(";").shift();
+  if (parts.length === 2) return parts.pop().split(";").shift();
 }
 var url = getCookie("API_URL");
 //#################
@@ -66,7 +66,7 @@ const getHighlights = (token) => {
                         title = v.title;
                         article =  v.article.articleTitle;
                         date = v.article.articleDate;
-                        authors = v.article.citation;
+                        authors = v.article.articleCitation;
 						authors=authors.replace(date,'');
 
                         var h5 = document.createElement('h5');
