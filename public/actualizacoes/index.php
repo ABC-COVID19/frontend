@@ -1,4 +1,5 @@
- <?php
+<script type="text/javascript" src="../env_config.js"></script>
+<?php
 	include($_SERVER['DOCUMENT_ROOT'].'/includes/htmlHeader.php');
 ?>
 

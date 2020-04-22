@@ -47,7 +47,7 @@ const getRevisions = (token,ids) => {
        headers: { Authorization: `Bearer ${token}` }
    };
    
-    axios.get(url + '/services/icamapi/api/revisions?active.equals=true&ctreeId.in='+ids,
+    axios.get(url + '/services/icamapi/api/revisions?reviewStat.equals=Accepted&ctreeId.in='+ids,
         config)
         .then(response => {
             var revisions = response.data;

@@ -78,7 +78,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
  	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="js/script.js"></script>
 
 
   <!-- Menu Toggle Script -->
