@@ -47,8 +47,10 @@ const getRevision = (token,id) => {
                el.textContent=getRevCats(revision.ctrees); 
                var el = document.querySelector("#keywords");
                el.textContent=revision.keywords; 
+               var el = document.querySelector("#author");
+               el.textContent= revision.author;
                var el = document.querySelector("#reviewer");
-               el.textContent=revision.reviewer; 
+               el.textContent= revision.reviewer;
  
 
         })

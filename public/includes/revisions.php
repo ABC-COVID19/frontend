@@ -48,7 +48,8 @@
            	<p class="grey-text mr-2"><i class="fas fa-link mr-2"></i> url: <span id="link" class="fontCblue"></span></p>
 			<p class="grey-text mr-2">Categorias: <span id="category" class="fontCblue"></span></p>
 			<p class="grey-text mr-2">Keywords: <span id="keywords" class="fontCblue"></span></p>
-			<p class="grey-text mr-2">Autor/revisor da sinopse: <span id="reviewer" class="fontCblue"></span></p>			
+			<p class="grey-text mr-2">Autor da sinopse: <span id="author" class="fontCblue"></span></p>
+            <p class="grey-text mr-2">Revisão da sinopse: <span id="reviewer" class="fontCblue"></span></p>
 
          </div>
       </div>
