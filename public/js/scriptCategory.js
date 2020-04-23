@@ -61,7 +61,7 @@ const getRevisions = (token,ids) => {
                 title = v.title;
                 article =  v.article.articleTitle;
                 date = v.article.articleDate;
-                authors = v.article.citation;
+                authors = v.article.articleCitation;
 				authors=authors.replace(date,'');
 
                 var h5 = document.createElement('h5');
