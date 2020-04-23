@@ -35,7 +35,7 @@ const getRevision = (token,id) => {
 			   var aa = createLink(revision.article.articleLink,revision.article.articleTitle,'fontCblue');
 			   el.appendChild(aa);
                var el = document.querySelector("#authors");
-               el.textContent=revision.article.citation.replace(revision.article.articleDate,'');
+               el.textContent=revision.article.articleCitation.replace(revision.article.articleDate,'');
                var el = document.querySelector("#sinopse");
                el.innerHTML =revision.summary.replace(/\n/g,'<br><br>');
                var el = document.querySelector("#date");
@@ -47,8 +47,10 @@ const getRevision = (token,id) => {
                el.textContent=getRevCats(revision.ctrees); 
                var el = document.querySelector("#keywords");
                el.textContent=revision.keywords; 
+               var el = document.querySelector("#author");
+               el.textContent= revision.author;
                var el = document.querySelector("#reviewer");
-               el.textContent=revision.reviewer; 
+               el.textContent= revision.reviewer;
  
 
         })

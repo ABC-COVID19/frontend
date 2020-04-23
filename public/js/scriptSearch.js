@@ -60,7 +60,7 @@ const getRevisions = (token,str) => {
 								title = v.title;
 								article =  v.article.articleTitle;
 								date = v.article.articleDate;
-								authors = v.article.citation;
+								authors = v.article.articleCitation;
 
 								var h5 = document.createElement('h5');
 								h5.className ="font-weight-bold mb-3 fontCblue";
