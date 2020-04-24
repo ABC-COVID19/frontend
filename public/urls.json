@@ -62,20 +62,32 @@
         "id": 11,
         "title": "Sociedades e Associações de Especialidades Médicas (Portugal)",
         "childs": [
-		      {
+			{
 				"id": 111,
+				"title": "OM - Ordem dos Médicos",
+				"childs": [],
+				"urls": [
+					{
+						"title": "Informações sobre COVID-19",
+						"link": "http://ordemdosmedicos.pt/covid-19/?fbclid=IwAR1YNJrdqnZRRfTK5cg-ccH2AHV6ysrYLrSxhXxasc1HwQXCTYmKbL2SwQ0"
+					}
+
+				]
+			},
+		      {
+				"id": 112,
 				"title": "Associação dos Jovens Médicos",
 				"childs": [],
 				"urls": [
 				  {
-					"title": "Página principal",
+					"title": "Ligações para as várias sociedades médicas portuguesas",
 					"link": "https://ajomed.org/associaes-e-sociedades-mdicas"
-				  }			  
+				  }
 
 				]
 			  },
 			  {
-				"id": 112,
+				"id": 113,
 				"title": "SPCI - Sociedade Portuguesa de Cuidados Intensivos",
 				"childs": [],
 				"urls": [
@@ -84,7 +96,29 @@
 					"link": "https://www.spci.pt/covid-19"
 				  }
 				]
-			  } 
+			  },
+			{
+				"id": 114,
+				"title": "ANMSP - Associação Nacional dos Médicos de Saúde Pública",
+				"childs": [],
+				"urls": [
+					{
+						"title": "Informações atualizadas sobre o COVID-19 em Portugal",
+						"link": "https://www.anmsp.pt/covid19"
+					}
+				]
+			},
+			{
+				"id": 115,
+				"title": "APAH - Associação Portuguesa de Administradores Hospitalares",
+				"childs": [],
+				"urls": [
+					{
+						"title": "Várias sessões (webinar) sobre gestão de espaços e recursos no âmbito da pandemia COVID-19",
+						"link": "https://apah.pt/"
+					}
+				]
+			}
 		],
         "urls": []
  
@@ -308,11 +342,11 @@
     "childs": [
 	
      {
-        "id": 11,
+        "id": 21,
         "title": "Bases de Dados / Bibliotecas virtuais",
         "childs": [
 		      {
-				"id": 111,
+				"id": 211,
 				"title": "Cochrane - Biblioteca de revisões sistemáticas (em Inglês): ",
 				"childs": [],
 				"urls": [
@@ -323,7 +357,7 @@
 				]
 			  },
 			  {
-				"id": 112,
+				"id": 212,
 				"title": "LITCOVID – Base dados de pesquisa de literatura sobre COVID-19 (em inglês), que reúne todos os artigos publicados desde o início da pandemia e é disponibilizado pela Biblioteca Nacional de Medicina dos EUA ",
 				"childs": [],
 				"urls": [
@@ -358,7 +392,7 @@
 				]
 			  },
 			  {
-				"id": 112,
+				"id": 213,
 				"title": "UpToDate (Base de Dados de Artigos de Revisão atualizados por mais de 7100 clínicos a nível mundial)",
 				"childs": [],
 				"urls": [
@@ -367,18 +401,62 @@
 					"link": "https://www.uptodate.com/contents/coronavirus-disease-2019-covid-19?search=covid&source=search_result&selectedTitle=1~34&usage_type=default&display_rank=1"
 				  }
 				]
-			  }
+			  },
+			{
+				"id": 214,
+				"title": "BMJ - Best Practice",
+				"childs": [],
+				"urls": [
+					{
+						"title": "Artigo de revisão gratuito e sucinto sobre COVID-19 (em inglês)",
+						"link": "https://bestpractice.bmj.com/topics/en-gb/3000168/pdf/3000168/COVID-19.pdf"
+					}
+				]
+			},
+			{
+				"id": 215,
+				"title": "Elsevier",
+				"childs": [],
+				"urls": [
+					{
+						"title": "Centro de recursos de Informação do Coronavirus",
+						"link": "https://www.elsevier.com/connect/coronavirus-information-center?PT"
+					}
+				]
+			},
+			{
+				"id": 216,
+				"title": "Ovid",
+				"childs": [],
+				"urls": [
+					{
+						"title": "Wolters Kluwer COVID-19 Resources",
+						"link": "http://healthclarity.wolterskluwer.com/coronavirus-resources.html?utm_source=marketo&utm_medium=email&utm_campaign=ovid-customer-memo&mkt_tok=eyJpIjoiWlRjME56YzRNVEJpWm1GaCIsInQiOiJSUHlxODJXZUtrNU90V0daaGJmMW5JTTJHanZJcEZVMG9PWm5kdkUzd2M5Z2owZzJsVUJJTll2Um"
+					}
+				]
+			},
+			{
+				"id": 217,
+				"title": "Pubcovid19",
+				"childs": [],
+				"urls": [
+					{
+						"title": "Pesquisa rápida de artigos médicos indexados sobre COVID19 e classificados por temas",
+						"link": "http://pubcovid19.pt/"
+					}
+				]
+			}
 			  
 		],
         "urls": []
  
       }	,
      {
-        "id": 11,
-        "title": "Livros",
+        "id": 22,
+        "title": "Livros / Revistas",
         "childs": [
 		      {
-				"id": 111,
+				"id": 221,
 				"title": "Universidade de Medicina de Zhejiang, China (University School of Medicine of Zhejiang-FAZHU)",
 				"childs": [],
 				"urls": [
@@ -387,7 +465,18 @@
 					"link": "https://video-intl.alicdn.com/Handbook%20of%20COVID-19%20Prevention%20and%20Treatment%20%28Standard%29.pdf?spm=a3c0i.14138300.8102420620.download.6df3647folCHWv&file=Handbook%20of%20COVID-19%20Prevention%20and%20Treatment%20%28Standard%29.pdf"
 				  }			  
 				]
-			  }
+			  },
+			{
+				"id": 222,
+				"title": "LIFESAVING- Publicação científica e técnica, na área da emergência médica, CHUA",
+				"childs": [],
+				"urls": [
+					{
+						"title": "Highlights-covid-19",
+						"link": "http://www.chualgarve.min-saude.pt/lifesaving/highlights-covid-19/"
+					}
+				]
+			}
 			  
 		],
         "urls": []
