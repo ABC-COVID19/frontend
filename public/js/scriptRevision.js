@@ -1,11 +1,6 @@
 
 //Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
-function getCookie(name) {
-  var value = "; " + document.cookie;
-  var parts = value.split("; " + name + "=");
-  if (parts.length == 2) return parts.pop().split(";").shift();
-}
-var url = getCookie("API_URL");
+var url = API_FETCH_URL;
 //#################
 
 var urlParams = new URLSearchParams(window.location.search);
@@ -17,15 +12,10 @@ if(urlParams.has('id')) {
 
 
 
-const getRevision = (token,id) => {
-     config = {
-         headers: { Authorization: `Bearer ${token}`,
-        },
-    };
+const getRevision = (id) => {
    
 
-    axios.get(url + '/services/icamapi/api/revisions?active.equals=true&id.equals='+id,
-        config)
+    axios.get(url + '/services/icamapi/api/revisions?size=100&reviewState.equals=Accepted&id.equals='+id)
         .then(response => {
             var revision = response.data[0];
 			console.log(revision);
@@ -85,4 +75,4 @@ const getRevCats = (ctree) => {
 };
 
 
- getRevision(id_token,id);
+ getRevision(id);

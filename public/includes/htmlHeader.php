@@ -29,6 +29,6 @@
   gtag('config', 'UA-752667-66');
 </script>
 <meta property="og:title" content="Projeto ICAM-COVID19">
-<meta property="og:image" content="https://www.icam.org.pt/assets/projectoICAMcovid.jpg"> 
-
+<meta property="og:image" content="https://www.icam.org.pt/assets/projectoICAMcovid.jpg">
+    <script src="/env_config.js"></script>
 </head>

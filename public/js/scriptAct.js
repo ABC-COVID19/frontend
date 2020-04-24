@@ -1,20 +1,12 @@
 
 //Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
-function getCookie(name) {
-	var value = "; " + document.cookie;
-	var parts = value.split("; " + name + "=");
-	if (parts.length === 2) return parts.pop().split(";").shift();
-}
-var url = getCookie("API_URL");
+var url = API_FETCH_URL;
 //#################
 
 
-const getCategories = (token) => {
-     config = {
-        headers: { Authorization: `Bearer ${token}` }
-    };
-    axios.get(url + '/services/icamapi/api/category-trees',
-        config)
+const getCategories = () => {
+
+    axios.get(url + '/services/icamapi/api/category-trees')
         .then(response => {
             const categories = response.data;
             var el = document.querySelector(".categories");
@@ -44,6 +36,7 @@ const getCategories = (token) => {
         .catch(error => console.error(error));
 };
 
+// todo: newsletter post requires auth! on hold -> changing to Egoi for newsletter
 const formActSub = (event) => {
 	event.preventDefault();
 	var firstName = document.querySelector("#firstName").value;
@@ -82,11 +75,7 @@ const formActSub = (event) => {
 	  "registrationDate": today,
 	  "rgpdAuth": true
 	};
-
-     config = {
-        headers: { Authorization: `Bearer ${id_token}` }
-    };
-    axios.post(url + '/services/icamapi/api/newsletters',act,config)
+    axios.post(url + '/services/icamapi/api/newsletters',act)
         .then(response => {
 //            const news = response.data;
 //			console.log(news);
@@ -106,7 +95,7 @@ const formActSub = (event) => {
 var form = document.querySelector("#formAct");
 form.addEventListener("submit", formActSub);
 
-getCategories(id_token);
+getCategories();
 
 
 

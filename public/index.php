@@ -1,15 +1,6 @@
-<script type="text/javascript" src="./env_config.js"></script>
  <?php
   include($_SERVER['DOCUMENT_ROOT'].'/includes/htmlHeader.php');
 ?>
-
-<script>
-    //todo: fix nisto. neste moment todos os indexes que fazem requests ao API precisam disto e do includes env_config
-    //todo: esses o newsletter tem isto tb
-    //Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
-    //###############
-    document.cookie = 'API_URL='+ API_FETCH_URL;
-</script>
 
 <body>
   
@@ -74,16 +65,10 @@
   <!-- /#wrapper -->
 
   <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
  	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script >
- <?php
-	include($_SERVER['DOCUMENT_ROOT'].'/includes/auth.php');
-?>
-	var id_token='<?=$id_token?>';
-	</script>
 	<script src="/js/script.js"></script>
 
 
