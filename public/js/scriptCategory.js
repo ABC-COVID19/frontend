@@ -1,11 +1,6 @@
 
 //Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
-function getCookie(name) {
-  var value = "; " + document.cookie;
-  var parts = value.split("; " + name + "=");
-  if (parts.length == 2) return parts.pop().split(";").shift();
-}
-var url = getCookie("API_URL");
+var url = API_FETCH_URL;
 //#################
 
 var urlParams = new URLSearchParams(window.location.search);
@@ -19,20 +14,14 @@ if(urlParams.has('id')) {
 }
 
 
-const getContent = (token) => {
-            getCategory(token,id);
-            getRevisions(token,ids);
+const getContent = () => {
+            getCategory(id);
+            getRevisions(ids);
 };
 
-const getCategory = (token,id) => {
+const getCategory = (id) => {
 
-         config = {
-         headers: { Authorization: `Bearer ${token}`,
-        },
-    };
-
-    axios.get(url + '/services/icamapi/api/category-trees?id.equals='+id,
-        config)
+    axios.get(url + '/services/icamapi/api/category-trees?id.equals='+id)
         .then(response => {
             const category = response.data[0];
             var el = document.querySelector(".page-name");
@@ -42,13 +31,9 @@ const getCategory = (token,id) => {
 };
 
 
-const getRevisions = (token,ids) => {
-    config = {
-       headers: { Authorization: `Bearer ${token}` }
-   };
+const getRevisions = (ids) => {
    
-    axios.get(url + '/services/icamapi/api/revisions?reviewStat.equals=Accepted&ctreeId.in='+ids,
-        config)
+    axios.get(url + '/services/icamapi/api/revisions?size=100&reviewState.equals=Accepted&ctreeId.in='+ids)
         .then(response => {
             var revisions = response.data;
             var nRec = document.querySelector("#nRecords");
@@ -144,4 +129,4 @@ const getRevCats = (ctree) => {
 	});
 	return tt;
 };
-getContent(id_token);
+getContent();

@@ -1,10 +1,5 @@
 //Workaround made to differentiate PROD from DEV api url - Consider the use of Environment Variables.
-function getCookie(name) {
-  var value = "; " + document.cookie;
-  var parts = value.split("; " + name + "=");
-  if (parts.length == 2) return parts.pop().split(";").shift();
-}
-var url = getCookie("API_URL");
+var url = API_FETCH_URL;
 //#################
 
 var urlParams = new URLSearchParams(window.location.search);
@@ -15,15 +10,10 @@ if(urlParams.has('search')) {
 
 
 
-const getRevisions = (token,str) => {
-     config = {
-         headers: { Authorization: `Bearer ${token}`,
-        },
-    };
+const getRevisions = (str) => {
 
 	ids='0';
-    axios.get(url + '/services/icamapi/api/revisions?active.equals=true&title.contains='+str,
-        config)
+    axios.get(url + '/services/icamapi/api/revisions?size=100&reviewState.equals=Accepted&title.contains='+str)
         .then(response => {
             var revisions = response.data;
            revisions.forEach(v => {
@@ -31,16 +21,14 @@ const getRevisions = (token,str) => {
            });
 
 
-			axios.get(url + '/services/icamapi/api/revisions?active.equals=true&keywords.contains='+str,
-				config)
+			axios.get(url + '/services/icamapi/api/revisions?size=100&reviewState.equals=Accepted&keywords.contains='+str)
 				.then(response => {
 					var revisions = response.data;
 					revisions.forEach(v => {
 						ids=ids + ',' + v.id;
 					});
 
-					axios.get(url + '/services/icamapi/api/revisions?active.equals=true&summary.contains='+str,
-						config)
+					axios.get(url + '/services/icamapi/api/revisions?size=100&reviewState.equals=Accepted&summary.contains='+str)
 						.then(response => {
 							var revisions = response.data;
 							revisions.forEach(v => {
@@ -49,8 +37,7 @@ const getRevisions = (token,str) => {
 
 
 
-					axios.get(url + '/services/icamapi/api/revisions?active.equals=true&id.in='+ids,
-						config)
+					axios.get(url + '/services/icamapi/api/revisions?size=100&reviewState.equals=Accepted&id.in='+ids)
 						.then(response => {
 							var revisions = response.data;
 							var id=0;
@@ -161,4 +148,4 @@ const getRevCats = (ctree) => {
 	return tt;
 };
 
-getRevisions(id_token,str);
+getRevisions(str);
