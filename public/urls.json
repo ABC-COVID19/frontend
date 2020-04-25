@@ -59,11 +59,11 @@
  
       },
      {
-        "id": 11,
+        "id": 12,
         "title": "Sociedades e Associações de Especialidades Médicas (Portugal)",
         "childs": [
 			{
-				"id": 111,
+				"id": 121,
 				"title": "OM - Ordem dos Médicos",
 				"childs": [],
 				"urls": [
@@ -75,7 +75,7 @@
 				]
 			},
 		      {
-				"id": 112,
+				"id": 122,
 				"title": "Associação dos Jovens Médicos",
 				"childs": [],
 				"urls": [
@@ -87,7 +87,7 @@
 				]
 			  },
 			  {
-				"id": 113,
+				"id": 123,
 				"title": "SPCI - Sociedade Portuguesa de Cuidados Intensivos",
 				"childs": [],
 				"urls": [
@@ -98,7 +98,7 @@
 				]
 			  },
 			{
-				"id": 114,
+				"id": 124,
 				"title": "ANMSP - Associação Nacional dos Médicos de Saúde Pública",
 				"childs": [],
 				"urls": [
@@ -109,7 +109,7 @@
 				]
 			},
 			{
-				"id": 115,
+				"id": 125,
 				"title": "APAH - Associação Portuguesa de Administradores Hospitalares",
 				"childs": [],
 				"urls": [
@@ -124,23 +124,27 @@
  
       },
      {
-        "id": 11,
+        "id": 13,
         "title": "Sociedades e Associações de Especialidades Médicas (Europa)",
         "childs": [
 		      {
-				"id": 111,
+				"id": 131,
 				"title": "EMA - Agência Europeia do Medicamento",
 				"childs": [],
 				"urls": [
 				  {
 					"title": "Listagem das Associações Europeias de Especialidades, em inglês ",
 					"link": "https://emanet.org/european-medical-associations/"
-				  }		  
+				  },
+					{
+						"title": "Tratamento e vacinas no combate à COVID-19",
+						"link": "https://www.ema.europa.eu/en/human-regulatory/overview/public-health-threats/coronavirus-disease-covid-19/treatments-vaccines-covid-19"
+					}
 
 				]
 			  },
 			  {
-				"id": 112,
+				"id": 132,
 				"title": "EAHP - Associação Europeia de Farmacêuticos Hospitalares (em inglês) ",
 				"childs": [],
 				"urls": [
@@ -151,7 +155,7 @@
 				]
 			  },
 			  {
-				"id": 112,
+				"id": 133,
 				"title": "ESAHQ - Sociedade Europeia de Anestesiologia (em Inglês) ",
 				"childs": [],
 				"urls": [
@@ -162,7 +166,7 @@
 				]
 			  },		  
 			  {
-				"id": 112,
+				"id": 134,
 				"title": "ESICM - Sociedade Europeia de Cuidados Intensivos (em Inglês)",
 				"childs": [],
 				"urls": [
@@ -173,7 +177,7 @@
 				]
 			  },		  
 			  {
-				"id": 112,
+				"id": 135,
 				"title": "SCCM - Sociedade de Cuidados Intensivos (em Inglês, EUA)",
 				"childs": [],
 				"urls": [
@@ -188,7 +192,7 @@
 				]
 			  },				  			  
 			  {
-				"id": 112,
+				"id": 136,
 				"title": "WFICC - Federação Mundial de Cuidados Intensivos (em Inglês, Mundial)",
 				"childs": [],
 				"urls": [
@@ -208,11 +212,11 @@
  
       },
      {
-        "id": 11,
+        "id": 14,
         "title": "ECDC – Centro Europeu para a Prevenção e Controlo de Doenças",
         "childs": [
 		      {
-				"id": 111,
+				"id": 141,
 				"title": "ECDC - Página dedicada ao COVID-19 (em inglês)",
 				"childs": [],
 				"urls": [
@@ -228,7 +232,7 @@
 				]
 			  },
 			  {
-				"id": 112,
+				"id": 142,
 				"title": "ECDC - Aconselhamento científico sobre o coronavírus (em inglês)",
 				"childs": [],
 				"urls": [
@@ -301,11 +305,11 @@
  
       },
      {
-        "id": 11,
+        "id": 15,
         "title": "OMS – Organização Mundial de Saúde",
         "childs": [
 		      {
-				"id": 111,
+				"id": 151,
 				"title": "OMS - Informação geral sobre a pandemia COVID-19 (em inglês)",
 				"childs": [],
 				"urls": [
@@ -317,7 +321,7 @@
 				]
 			  },
 			  {
-				"id": 112,
+				"id": 152,
 				"title": "OMS - Toda a documentação técnica por tópico, incluindo as medidas nacionais recomendadas (em inglês)",
 				"childs": [],
 				"urls": [
