@@ -204,8 +204,8 @@ opacity: 1;font-weight: bold;;
 }
 @media (min-width: 768px) {
     #logpfp {
-        width: 600px !important;
-        padding-bottom: 40px;
+        width: 540px !important;
+        padding-bottom: 30px;
     }
 }
 
