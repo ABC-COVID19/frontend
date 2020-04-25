@@ -1,5 +1,5 @@
     <div class="bg-white border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading"> <a href="/"><img src="/assets/ICAMcovid.png" class="sidebar__logo img-fluid"></a></div>
+      <div class="sidebar-heading"> <a href="/"><img src="/assets/ICAM2e_v2b.svg" class="sidebar__logo img-fluid" style="padding: 5px 10px"></a></div>
       <div class="list-group list-group-flush p-2 ml-2">
         <a href="/" class="list-group-item list-group-item-action"><i class="fas fa-search"></i>&nbsp;Pesquisar</a>
         <!--<a href="#" class="list-group-item list-group-item-action">Artigos</a>-->

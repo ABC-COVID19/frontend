@@ -4,9 +4,8 @@
    <div class="container" id="containerTop">
       <div class="row">
          <div class="col-12 mb-3">
-                          <img src="/assets/ICAM2e.png" class="img-fluid" id="logpfp" >
+                          <img src="/assets/ICAM2e_v2b_white.svg" class="img-fluid" id="logpfp" >
                             <p class="page-name mt-2">Sobre o ICAM</p>
-											<p>Informação Científica de Apoio aos Médicos</p>
             </h2>
          </div>
       </div>
@@ -40,7 +39,7 @@
 <p><strong>Alexandre Teixeira</strong></p>
 <p><span>(Coordenador do projeto ICAM)</span></p>
 	 <div class="text-center mb-5">	
- <img src="/assets/ICAM2full.png" class="img-fluid">
+ <img src="/assets/ICAM2e_v2b.svg" class="img-fluid">
  </div>
 		</div>				   
 				   

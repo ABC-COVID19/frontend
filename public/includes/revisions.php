@@ -5,7 +5,7 @@
    <div class="container" id="containerTop">
       <div class="row">
          <div class="col-12 mb-3">
-                          <img src="/assets/ICAM2e.png" class="img-fluid" id="logpfp" >
+                          <img src="/assets/ICAM2e_v2b_white.svg" class="img-fluid" id="logpfp" >
                             <p class="page-name mt-2" id="title"></p>
 											
             </h2>

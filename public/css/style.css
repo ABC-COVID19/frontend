@@ -198,9 +198,15 @@ opacity: 1;font-weight: bold;;
 	
 }
 
-#logpfp{ width: 150px !important;}
+#logpfp {
+    width: 450px !important;
+    padding-bottom: 20px;
+}
 @media (min-width: 768px) {
-#logpfp{ width: 450px !important;}
+    #logpfp {
+        width: 600px !important;
+        padding-bottom: 40px;
+    }
 }
 
 
