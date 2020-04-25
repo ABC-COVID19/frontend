@@ -2,8 +2,7 @@
    <div class="container" id="containerTop">
       <div class="row">
          <div class="col-12 mb-3">
-            <img src="/assets/ICAM2e.png" class="img-fluid" id="logpfp" >
-            <h1 class="mt-3">Informação Científica de Apoio aos Médicos</h1>
+            <img src="/assets/ICAM2e_v2b_white.svg" class="img-fluid" id="logpfp" >
             <h2 class="mb-md-4 mb-5 text-justify">
                Um reposit&oacute;rio de sinopses em portugu&ecirc;s, produzidas por uma equipa de m&eacute;dicos e investigadores volunt&aacute;rios, que diariamente selecionam os artigos cient&iacute;ficos mais relevantes sobre a CoVID-19.
              

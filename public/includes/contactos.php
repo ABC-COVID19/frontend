@@ -4,9 +4,8 @@
 <div class="container" id="containerTop">
       <div class="row">
          <div class="col-12 mb-3">
-                          <img src="/assets/ICAM2e.png" class="img-fluid" id="logpfp" >
+                          <img src="/assets/ICAM2e_v2b_white.svg" class="img-fluid" id="logpfp" >
                             <p class="page-name  mt-2">Contactos ICAM</p>
-											<p>Informação Científica de Apoio aos Médicos</p>
             </h2>
          </div>
       </div>
@@ -44,7 +43,7 @@
                         </li>
                       </ul>
 <hr>
- 	 <a href="mailto:geral@icam.org.pt"> <img src="/assets/ICAM2full.png" class="img-fluid mt-4 mb-4" ></a>
+ 	 <a href="mailto:geral@icam.org.pt"> <img src="/assets/ICAM2e_v2b.svg" class="img-fluid mt-4 mb-4" ></a>
 
 		</div>				   
 				   

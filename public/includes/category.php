@@ -6,9 +6,7 @@
 <div class="container" id="containerTop">
       <div class="row">
          <div class="col-12 mb-3">
-                          <img src="/assets/ICAM2e.png" class="img-fluid" id="logpfp" >
-                           
-											<p class=" mt-2">Informação Científica de Apoio aos Médicos</p>
+                          <img src="/assets/ICAM2e_v2b_white.svg" class="img-fluid" id="logpfp" >
             </h2>
          </div>
       </div>
