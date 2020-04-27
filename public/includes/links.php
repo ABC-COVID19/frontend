@@ -5,7 +5,7 @@
       <div class="row">
          <div class="col-12 mb-3">
                           <img src="/assets/ICAM2e_v2b_white.svg" class="img-fluid" id="logpfp" >
-                            <p class="page-name mt-2">Links CoVID-19</p>
+                            <p class="page-name mt-2">Links COVID-19</p>
             </h2>
          </div>
       </div>

@@ -4,7 +4,7 @@
          <div class="col-12 mb-3">
             <img src="/assets/ICAM2e_v2b_white.svg" class="img-fluid" id="logpfp" >
             <h2 class="mb-md-4 mb-5 text-justify">
-               Um reposit&oacute;rio de sinopses em portugu&ecirc;s, produzidas por uma equipa de m&eacute;dicos e investigadores volunt&aacute;rios, que diariamente selecionam os artigos cient&iacute;ficos mais relevantes sobre a CoVID-19.
+               Um reposit&oacute;rio de sinopses em portugu&ecirc;s, produzidas por uma equipa de m&eacute;dicos e investigadores volunt&aacute;rios, que diariamente selecionam os artigos cient&iacute;ficos mais relevantes sobre a COVID-19.
              
             </h2>
          </div>
