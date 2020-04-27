@@ -4,7 +4,7 @@
         <a href="/" class="list-group-item list-group-item-action"><i class="fas fa-search"></i>&nbsp;Pesquisar</a>
         <!--<a href="#" class="list-group-item list-group-item-action">Artigos</a>-->
         <a href="/abouticam/" class="list-group-item list-group-item-action"><i class="fas fa-info"></i>&nbsp;Sobre o ICAM</a>
-		<a href="/links/" class="list-group-item list-group-item-action"><i class="fas fa-link"></i>&nbsp;Links CoVID-19</a>
+		<a href="/links/" class="list-group-item list-group-item-action"><i class="fas fa-link"></i>&nbsp;Links COVID-19</a>
         <a href="#" class="list-group-item list-group-item-action"><i class="far fa-envelope"></i>&nbsp;Receber Atualizações</a>
         <a href="/contactos/" class="list-group-item list-group-item-action"><i class="far fa-address-card"></i>&nbsp;Contactos</a>
  

@@ -26,8 +26,8 @@
 					<div class="card  w-100">
 						<div class="card-body">
 							<h5 class="font-weight-bold mb-3 fontCblue">
-							<a title="Gravidez e CoVID-19 " href="/docs/Gravidez e CoVID-19 (Revisão dos artigos selecionados).pdf" target="_blank">
-							Gravidez e CoVID-19
+							<a title="Gravidez e COVID-19 " href="/docs/Gravidez e COVID-19 (Revisão dos artigos selecionados).pdf" target="_blank">
+							Gravidez e COVID-19
 							</a>
 							</h5>
 							<h6 class="grey-text mb-3">Revisão dos artigos selecionados</h6>
@@ -40,8 +40,8 @@
 					<div class="card  w-100">
 						<div class="card-body">
 							<h5 class="font-weight-bold mb-3 fontCblue">
-							<a title="Cloroquina e hidroxicloroquina no tratamento da CoVID-19 " href="/docs/highlight Hidroxicloroquina.pdf" target="_blank">
-							Cloroquina e hidroxicloroquina no tratamento da CoVID-19 
+							<a title="Cloroquina e hidroxicloroquina no tratamento da COVID-19 " href="/docs/highlight Hidroxicloroquina.pdf" target="_blank">
+							Cloroquina e hidroxicloroquina no tratamento da COVID-19
 							</a>
 							</h5>
 							<h6 class="grey-text mb-3">O que sabemos at&eacute; hoje! (Revis&atilde;o dos artigos selecionados)</h6>
