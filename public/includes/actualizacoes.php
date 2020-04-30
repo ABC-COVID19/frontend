@@ -14,7 +14,7 @@
 <div id="main-content">
    <div class="container">
       <h5 class="font-weight-bold mb-3 fontCblue  text-left  mt-5 ">
-         Ao escolher uma ou várias categorias, receberá por email as sinopses mais recentes dos artigos científicos referentes às suas opções, sempre que o nosso repositório seja atualizado.
+          Ao inscrever-se, receberá semanalmente, por email, as sinopses mais recentes dos artigos científicos revistos pela equipa ICAM.
       </h5>
       <div class="textBoxmain  text-left">
 	  
