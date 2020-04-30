@@ -1,1 +1,6 @@
-disallow: dev.icam.org.pt
+User-agent: *
+Disallow: /category/
+Disallow: /revisions/
+Disallow: /ppdp/
+Disallow: dev.icam.org.pt
+Sitemap: https://icam.org.pt/sitemap.xml
