@@ -209,7 +209,13 @@ opacity: 1;font-weight: bold;;
     }
 }
 
-
+@media (max-width: 768px) {
+    .col-9 {
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
 
 #footerSC 
 {
