@@ -37,29 +37,27 @@
 	  
 	  
 			  <div id="beforeSumbit">
-				 <form method="POST" id="formAct">
+				 <form method="post" enctype="multipart/form-data" action="https://22.e-goi.com//w/1e4e35TdeiTatvuHoJe8c10b728">
+                      <input type="hidden" name="lista" value="1">
+                      <input type="hidden" name="cliente" value="669193">
+                      <input type="hidden" name="lang" id="lang_id" value="pt">
+                      <input type="hidden" name="formid" id="formid" value="4">
 					<div class="form-group row">
-					   <label for="text1" class="col-3 col-form-label">Primeiro Nome </label> 
+					   <label for="fname_24" easylabel="Nome" class="col-3 col-form-label">Nome</label>
 					   <div class="col-9">
-						  <input id="firstName" name="firstName" type="text" class="form-control" required >
+                           <input type="text" name="fname_24" id="fname_24" value="" placeholder="" class="form-control">
 					   </div>
 					</div>
 					<div class="form-group row">
-					   <label for="text2" class="col-3 col-form-label">Último Nome</label> 
+                        <label for="campoe_4_23" class="col-3 col-form-label">Institui&#231;&#227;o</label>
 					   <div class="col-9">
-						  <input id="lastName" name="lastName" type="text" class="form-control" required>
+                           <input type="text" name="campoe_4_23" id="campoe_4_23" value="" placeholder="" class="form-control">
 					   </div>
 					</div>
 					<div class="form-group row">
-					   <label for="text" class="col-3 col-form-label">Endereço de e-mail</label> 
+                        <label for="email_25" class="col-3 col-form-label">E-mail  *</label>
 					   <div class="col-9">
-						  <input id="email" name="email" type="email" class="form-control" required>
-					   </div>
-					</div>
-					<hr>
-					<div class="form-group row">
-					   <label class="col-3 col-form-label">Categorias</label> 
-					   <div class="col-9 categories">
+                           <input type="email" name="email_25" id="email_25" value="" easyvalidation="true" placeholder="" class="form-control" required>
 					   </div>
 					</div>
 					<hr>
@@ -67,13 +65,13 @@
 					   <div class="col-12">
 						  <b>Tratamento de Dados Pessoais</b>
 						  <br>
-						  Autorizo a AD-ABC a proceder ao tratamento dos meus dados pessoais para efeitos de registo, contacto ou envio de comunicações e atualizações pela Plataforma ICAM - Informação Científica de Apoio aos Médicos, de acordo com os termos da Política de Proteção de Dados. Tenho consciência de que posso exercer a qualquer momento os meus direitos de proteção de dados, nomeadamente os direitos de acesso, retificação, oposição, limitação do tratamento ou apagamento, através de contacto com o Encarregado de Proteção de Dados da AD-ABC pelo endereço de correio electrónico geral@icam.org.pt. 
+						  Autorizo a AD-ABC a proceder ao tratamento dos meus dados pessoais para efeitos de registo, contacto ou envio de comunicações e atualizações pela Plataforma ICAM - Informação Científica de Apoio aos Médicos, de acordo com os termos da <a href="/ppdp/">Política de Proteção de Dados</a>. Tenho consciência de que posso exercer a qualquer momento os meus direitos de proteção de dados, nomeadamente os direitos de acesso, retificação, oposição, limitação do tratamento ou apagamento, através de contacto com o Encarregado de Proteção de Dados da AD-ABC pelo endereço de correio electrónico geral@icam.org.pt.
 					   </div>
 					</div>
 					<div class="form-group row">
 					   <div class="col-12">
 						  <div class="custom-control custom-checkbox custom-control-inline">
-							 <input name="checkbox1" id="checkbox1_0" type="checkbox" class="custom-control-input" value="1" required="required" > 
+							 <input name="easygoi_3[]" name="checkbox1" id="checkbox1_0" type="checkbox" class="custom-control-input" value="2" required="required" >
 							 <label for="checkbox1_0" class="custom-control-label">Autorizo a AD-ABC a proceder ao tratamento dos meus dados pessoais </label>
 						  </div>
 					   </div>
@@ -81,7 +79,7 @@
 					<hr>
 					<div class="form-group row">
 					   <div class="offset-4 col-9">
-						  <button name="submit" type="submit" class="btn  btSearchSC">Submeter</button>
+						  <button name="submit" type="submit" value="submit" class="btn  btSearchSC">Submeter</button>
 					   </div>
 					</div>
 				 </form>

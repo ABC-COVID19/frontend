@@ -80,8 +80,6 @@
     <script src="/js/bootstrap.min.js"></script>
  	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-	<script src="/js/scriptAct.js"></script>
-
 
   <!-- Menu Toggle Script -->
   <script>
