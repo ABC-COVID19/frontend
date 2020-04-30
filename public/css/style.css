@@ -215,6 +215,11 @@ opacity: 1;font-weight: bold;;
         flex: 0 0 100% !important;
         max-width: 100% !important;
     }
+    .col-3 {
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
 }
 
 #footerSC 
