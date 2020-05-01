@@ -65,7 +65,7 @@
 					   <div class="col-12">
 						  <b>Tratamento de Dados Pessoais</b>
 						  <br>
-						  Autorizo a AD-ABC a proceder ao tratamento dos meus dados pessoais para efeitos de registo, contacto ou envio de comunicações e atualizações pela Plataforma ICAM - Informação Científica de Apoio aos Médicos, de acordo com os termos da <a href="/ppdp/">Política de Proteção de Dados</a>. Tenho consciência de que posso exercer a qualquer momento os meus direitos de proteção de dados, nomeadamente os direitos de acesso, retificação, oposição, limitação do tratamento ou apagamento, através de contacto com o Encarregado de Proteção de Dados da AD-ABC pelo endereço de correio electrónico geral@icam.org.pt.
+						  Autorizo a AD-ABC a proceder ao tratamento dos meus dados pessoais para efeitos de registo, contacto ou envio de comunicações e atualizações pela Plataforma ICAM - Informação Científica de Apoio aos Médicos, de acordo com os termos da <a href="/ppdp/">Política de Proteção de Dados</a>.<br><br>Tenho consciência de que posso exercer a qualquer momento os meus direitos de proteção de dados, nomeadamente os direitos de acesso, retificação, oposição, limitação do tratamento ou apagamento, através de contacto com o Encarregado de Proteção de Dados da AD-ABC pelo endereço de correio electrónico geral@icam.org.pt.
 					   </div>
 					</div>
 					<div class="form-group row">
