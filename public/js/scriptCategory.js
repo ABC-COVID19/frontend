@@ -40,6 +40,9 @@ const getRevisions = (ids) => {
                 nRec.textContent = Object.keys(revisions).length;
 
             var el = document.querySelector("#articleList");
+            // since we GET all sub-categories, revisions with multiple subcats will be repeated
+            // this line removes repeated revisions by finding the first with every ID
+            revisions = revisions.filter((rev, index) => index === revisions.findIndex(r => r['id'] === rev['id']));
             revisions.forEach(v => {
 
                 id= v.id;
