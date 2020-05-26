@@ -10,7 +10,7 @@
  
       </div>
                 <div class="sidebar__user-area">
-                    <a class="sidebar__user-area__link" href="/">
+                    <a class="sidebar__user-area__link" href="https://api.icam.org.pt">
                      <i class="far fa-user"></i> &nbsp; Aceder
                     </a>
                 </div>	  
