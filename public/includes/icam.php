@@ -38,6 +38,10 @@
 <p><span>Esta plataforma aberta permite um acesso r&aacute;pido &agrave; informa&ccedil;&atilde;o cient&iacute;fica relevante e atualizada sobre a COVID-19 pelos profissionais de sa&uacute;de, para os apoiar na tomada de decis&otilde;es cl&iacute;nicas adequadas. Esperamos que seja &uacute;til para todos!</span><span><br /></span><span><br /></span><span><br /></span><span>Em nome da equipa ICAM COVID-19</span></p>
 <p><strong>Alexandre Teixeira</strong></p>
 <p><span>(Coordenador do projeto ICAM)</span></p>
+<br><br>
+<p><span>Este projeto não existiria sem os incansáveis voluntários do Movimento Tech4covid19 que ajudaram a construir esta plataforma:</span></p>
+<p><span>Fábio Silva, Luís Confraria, Guilherme Costa Lopes, Vitor, Filipe Marcelino, Mafalda, David Fontes, Pedro Carmezim, Josué, Carlos, Diana Cruz, Martinho, Tiago Rosa.</span></p>
+
 	 <div class="text-center mb-5">	
  <img src="/assets/ICAM2e_v2b.svg" class="img-fluid">
  </div>
