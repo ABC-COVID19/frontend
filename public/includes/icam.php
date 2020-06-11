@@ -40,7 +40,7 @@
 <p><span>(Coordenador do projeto ICAM)</span></p>
 <br><br>
 <p><span>Este projeto não existiria sem os incansáveis voluntários do Movimento Tech4covid19 que ajudaram a construir esta plataforma:</span></p>
-<p><span>Fábio Silva, Luís Confraria, Guilherme Costa Lopes, Vitor, Filipe Marcelino, Mafalda, David Fontes, Pedro Carmezim, Josué, Carlos, Diana Cruz, Martinho, Tiago Rosa.</span></p>
+<p><span>Fabio Silva, Luis Confraria, Guilherme Costa Lopes, Vitor, Filipe Marcelino, Mafalda Landeiro, David Fontes, Pedro Carmezim, Josué Rocha, Carlos, Diana Cruz, Martinho, Tiago Rosa.</span></p>
 
 	 <div class="text-center mb-5">	
  <img src="/assets/ICAM2e_v2b.svg" class="img-fluid">
